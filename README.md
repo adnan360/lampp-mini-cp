@@ -7,6 +7,15 @@ It is designed for XAMPP on Linux (LAMPP). But I guess the code can be used to i
 It asks for sudo password before Starting and Stopping.
 It does so by utilizing pkexec, kdesu or gksu -- whichever it finds in the system.
 
+![alt text](https://github.com/adnan360/lampp-mini-cp/raw/master/src/common/screenshots/lampp-mini-cp-1.png "LAMPP Mini Control Panel - free and open control panel for LAMPP - Screenshot after starting server")
+
+# Download
+Please see the Releases section
+
+# Usage
+Just copy the binary somewhere and then run. It should work.
+You can also create a .desktop file and run it, then use as usual.
+
 # Future plans
 ~~- To show status~~
 - Single button for starting and stopping (if possible)
