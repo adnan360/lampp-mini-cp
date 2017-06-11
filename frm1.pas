@@ -6,6 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Buttons,
+  StdCtrls,
   //
   Process;
 
@@ -14,10 +15,14 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    btnStatus: TBitBtn;
     btnStart: TBitBtn;
     btnStop: TBitBtn;
+    Memo1: TMemo;
     procedure btnStartClick(Sender: TObject);
+    procedure btnStatusClick(Sender: TObject);
     procedure btnStopClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { private declarations }
   public
@@ -47,6 +52,31 @@ begin
 
   AProcess.Execute;
   AProcess.Free;
+
+  Sleep(6000);
+  btnStatusClick(Sender);
+end;
+
+procedure TForm1.btnStatusClick(Sender: TObject);
+var
+  AProcess: TProcess;
+  AStringList: TStringList;
+begin
+  AProcess := TProcess.Create(nil);
+
+  //AProcess.Executable := getSudoGUI;
+  //AProcess.Parameters.Add('/opt/lampp/lampp');
+  //AProcess.Parameters.Add('status');
+  AProcess.CommandLine:='/opt/lampp/lampp status';
+  AProcess.Options := AProcess.Options + [poWaitOnExit, poUsePipes];
+
+  AProcess.Execute;
+
+  AStringList := TStringList.Create;
+  AStringList.LoadFromStream(AProcess.Output);
+  Memo1.Text:=AStringList.Text;
+
+  AProcess.Free;
 end;
 
 procedure TForm1.btnStopClick(Sender: TObject);
@@ -61,6 +91,14 @@ begin
 
   AProcess.Execute;
   AProcess.Free;
+
+  Sleep(6000);
+  btnStatusClick(Sender);
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  btnStatusClick(Sender);
 end;
 
 function TForm1.getSudoGUI: String;

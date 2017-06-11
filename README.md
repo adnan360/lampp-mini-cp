@@ -8,7 +8,7 @@ It asks for sudo password before Starting and Stopping.
 It does so by utilizing pkexec, kdesu or gksu -- whichever it finds in the system.
 
 # Future plans
-- To show status
+~~- To show status~~
 - Single button for starting and stopping (if possible)
 - Editing php.ini from within panel
 - Individual modules start and stop

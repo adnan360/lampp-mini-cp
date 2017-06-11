@@ -1,28 +1,50 @@
 object Form1: TForm1
   Left = 248
-  Height = 209
+  Height = 194
   Top = 157
-  Width = 400
+  Width = 543
   Caption = 'LAMPP Mini Control Panel'
-  ClientHeight = 209
-  ClientWidth = 400
+  ClientHeight = 194
+  ClientWidth = 543
+  OnCreate = FormCreate
   LCLVersion = '1.6.4.0'
   object btnStart: TBitBtn
-    Left = 152
+    Left = 320
     Height = 62
-    Top = 32
+    Top = 24
     Width = 203
     Caption = 'Start'
     OnClick = btnStartClick
     TabOrder = 0
   end
   object btnStop: TBitBtn
-    Left = 152
+    Left = 320
     Height = 62
-    Top = 112
+    Top = 104
     Width = 203
     Caption = 'Stop'
     OnClick = btnStopClick
     TabOrder = 1
+  end
+  object btnStatus: TBitBtn
+    Left = 16
+    Height = 32
+    Top = 134
+    Width = 283
+    Caption = 'Update Status'
+    OnClick = btnStatusClick
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 104
+    Top = 24
+    Width = 283
+    Lines.Strings = (
+      '-- Status will appear here --'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
   end
 end

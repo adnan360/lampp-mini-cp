@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="frm1.pas"/>
@@ -20,12 +20,34 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="35" Y="60"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="49"/>
+        <CursorPos X="15" Y="56"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="frm1.pas"/>
+        <Caret Line="20" Column="45" TopLine="34"/>
+      </Position1>
+      <Position2>
+        <Filename Value="frm1.pas"/>
+        <Caret Line="21" Column="45" TopLine="21"/>
+      </Position2>
+      <Position3>
+        <Filename Value="frm1.pas"/>
+        <Caret Line="24" Column="45" TopLine="23"/>
+      </Position3>
+      <Position4>
+        <Filename Value="frm1.pas"/>
+        <Caret Line="67" Column="41" TopLine="56"/>
+      </Position4>
+      <Position5>
+        <Filename Value="frm1.pas"/>
+        <Caret Line="24" Column="23" TopLine="14"/>
+      </Position5>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>
