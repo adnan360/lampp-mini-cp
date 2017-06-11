@@ -14,7 +14,15 @@ Please see the Releases section
 
 # Usage
 Just copy the binary somewhere and then run. It should work.
+
 You can also create a .desktop file and run it, then use as usual.
+
+It does not require sudo password when starting the program, but asks when Starting and Stopping. (Running graphical apps without sudo is best for security.) But you can surely run the program with sudo:
+```
+sudo /path/to/lampp_mini_cp
+```
+
+This will only ask for the sudo password at the beginning and not again when starting or stopping.
 
 # Future plans
 ~~- To show status~~
