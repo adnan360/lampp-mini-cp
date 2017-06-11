@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="10"/>
-    <BuildModes Active="Default"/>
+    <BuildModes Active="Release"/>
     <Units Count="2">
       <Unit0>
         <Filename Value="proj_lampp_mini_cp.lpr"/>
@@ -17,9 +17,9 @@
         <Filename Value="frm1.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="48"/>
         <CursorPos X="35" Y="60"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>

@@ -33,8 +33,11 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+#KDE Dolphin File Manager
+.directory
 
 # Free Pascal specific #
 ########################
 backup
 lib
+bin
