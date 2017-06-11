@@ -13,11 +13,36 @@ It does so by utilizing pkexec, kdesu or gksu -- whichever it finds in the syste
 Please see the Releases section
 
 # Usage
-Just copy the binary somewhere and then run. It should work.
+Just copy the binary somewhere and then run. It should work. It just requires that a LAMPP installation is installed on /opt/lampp directory.
 
 You can also create a .desktop file and run it, then use as usual.
+The most basic form of a .desktop file would be (~/.local/share/applications/lampp_mini_cp.desktop):
+```
+[Desktop Entry]
+Comment=LAMPP Mini Control Panel
+Name=LAMPP Mini Control Panel
+Exec=/path/to/lampp_mini_cp
+Icon=/path/to/some/icon.png
+Encoding=UTF-8
+Terminal=false
+Type=Application
+```
 
-It does not require sudo password when starting the program, but asks when Starting and Stopping. (Running graphical apps without sudo is best for security.) But you can surely run the program with sudo:
+It does not require sudo password when starting the program, but asks when Starting and Stopping. This way it is more secure (due to xorg security issues). Just run and enter when password is asked:
+
+```
+/path/to/lampp_mini_cp
+```
+
+or
+
+```
+cd /path/to/binary
+./lampp_mini_cp
+```
+
+But you can surely run the program with sudo (convenient, but not recommended):
+
 ```
 sudo /path/to/lampp_mini_cp
 ```
