@@ -30,6 +30,9 @@ type
     function getSudoGUI:String;
   end;
 
+const
+  workingmessage = 'Working...';
+
 var
   Form1: TForm1;
 
@@ -44,6 +47,9 @@ var
   AProcess: TProcess;
 begin
   AProcess := TProcess.Create(nil);
+
+  Memo1.Text := workingmessage;
+  Memo1.Refresh;
 
   // we just run: 'kdesu /opt/lampp/lampp start';
   AProcess.Executable := getSudoGUI;
@@ -63,6 +69,9 @@ var
   AStringList: TStringList;
 begin
   AProcess := TProcess.Create(nil);
+
+  Memo1.Text := workingmessage;
+  Memo1.Refresh;
 
   //AProcess.Executable := getSudoGUI;
   //AProcess.Parameters.Add('/opt/lampp/lampp');
@@ -84,6 +93,9 @@ var
   AProcess: TProcess;
 begin
   AProcess := TProcess.Create(nil);
+
+  Memo1.Text := workingmessage;
+  Memo1.Refresh;
 
   AProcess.Executable := getSudoGUI;
   AProcess.Parameters.Add('/opt/lampp/lampp');
