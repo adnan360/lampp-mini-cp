@@ -35,6 +35,8 @@ ehthumbs.db
 Thumbs.db
 #KDE Dolphin File Manager
 .directory
+#Kate text editor swap file
+*.kate-swp
 
 # Free Pascal specific #
 ########################
